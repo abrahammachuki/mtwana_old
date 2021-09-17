@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mtwana</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="{% url 'homepage' %}">Home</a></li>
+            <li><a href="{% url 'devicepage' %}">Devices</a></li>
+            <li><a href="{% url 'allocationpage' %}">Allocations</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'admin:index' %}"><span class="glyphicon glyphicon-log-in"></span>Admin Login</a></li>
+        </ul>
+    </div>
+
+    </ul>
+</nav>
+{% block content %}
+{% endblock content %}
+
+</body>
+</html>
